@@ -20,36 +20,31 @@ const About = () => {
           <div className="aboutInfo">
             <div>
               <p className="myself">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-                eligendi praesentium deleniti dolorem, mollitia libero facere
-                ratione, ut pariatur maiores vitae perferendis recusandae, optio
-                a dignissimos quidem iste dolore nulla vel voluptates atque.
-                Deserunt ratione obcaecati qui, officiis iusto magnam, nam quis
-                reiciendis corrupti quo asperiores voluptas totam corporis
-                dicta.
+                I'm a passionate front-end developer dedicated to crafting
+                immersive and intuitive user experiance. with experties in
+                technologies like HTML, CSS, Javascript, React.js, and Redux. I
+                thrive in collaborative environment, leveraging my skills to
+                create responsive and visually appealing web applications. My
+                goal is to continuously learn and adapt to new technologies,
+                ensuring that i deliver innovative solution that delight users.
               </p>
             </div>
 
             <div className="edu-info">
               <div className="education">
                 <h2>Education</h2>
-                <div>
-                  <h3>B.C.S</h3>
-                  <p>shivchhatrapati mahavidhyalaya</p>
-                  <p>Bamu University</p>
-                </div>
+                <h3>B.C.S</h3>
+                <p>shivchhatrapati mahavidhyalaya</p>
+                <p>Bamu University</p>
               </div>
 
               <div className="education">
                 <h2>Courses</h2>
-                <div>
-                  <h3>Web Devlopment</h3>
 
-                  <p>Udemy</p>
-                  <h3>React Js</h3>
-
-                  <p>Udemy</p>
-                </div>
+                <h3>Web Devlopment</h3>
+                <p>Udemy</p>
+                <h3>React Js</h3>
+                <p>Udemy</p>
               </div>
             </div>
           </div>

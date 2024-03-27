@@ -18,7 +18,7 @@ const Contact = () => {
               return (
                 <div key={id} className="info">
                   <i>{icon} </i>
-                  <h3>{name} </h3>
+
                   <p>{text} </p>
                 </div>
               );

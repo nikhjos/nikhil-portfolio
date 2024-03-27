@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -29,7 +29,6 @@ html {
   --text-color-white: var(--text-white);
   --text-white: white;
   --bg-dark: rgb(14, 13, 21);
-
   --bg-white: white;
   --text-dark: rgb(14, 13, 21);
   --section-bg: rgba(45, 84, 136, 0.629);
@@ -38,6 +37,7 @@ html {
 body {
   background-color: var(--bg-color-black);
   color: var(--text-color-white);
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -54,16 +54,17 @@ section {
 
 button {
   outline: 0;
-  border: 2px solid black;
-  background: transparent;
+  border: none;
   padding: 0.3rem 0.6rem;
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.3s linear;
+  border-radius: 1rem;
+  background: transparent;
 }
 
-button:hover {
-  border-color: var(--nav-bg);
+a {
+  color: black;
 }
 
 .title {
@@ -226,10 +227,20 @@ button:hover {
   width: 70%;
 }
 
-.hero-intro button {
+.hero-intro a {
   width: max-content;
-  color: var(--text-white);
-  border-color: var(--text-white);
+  border: 2px solid black;
+  border-color: var(--bg-white);
+  transition: all 0.3s ease;
+  color: var(--bg-white);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+}
+
+.hero-intro a:hover {
+  background: var(--linear-gradiant);
+  color: white;
 }
 
 @media (max-width: 600px) {
@@ -242,7 +253,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
 
   .hero-image {
@@ -263,7 +274,8 @@ button:hover {
   }
 
   .hero-intro h2 {
-    font-size: 3rem;
+    font-size: 5rem;
+    text-align: center;
   }
 
   .hero-intro span {
@@ -275,14 +287,14 @@ button:hover {
     font-size: 1.2rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
-    width: 70%;
-    text-align: center;
+    width: 60%;
+    text-align: justify;
   }
 
   .hero-intro button {
     width: max-content;
-    color: var(--text-white);
-    border-color: var(--text-white);
+
+    border-radius: 16px;
   }
 }
 
@@ -304,7 +316,6 @@ button:hover {
 
 .aboutImg {
   width: 40%;
-
   display: flex;
   align-items: center;
   justify-content: left;
@@ -312,6 +323,7 @@ button:hover {
 
 .aboutImg img {
   width: 60%;
+  border-radius: 1rem;
 }
 
 .aboutInfo {
@@ -338,11 +350,15 @@ button:hover {
 
 .edu-info .education {
   border: 2px solid black;
+  border-radius: 1rem;
   border-color: var(--text-white);
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   height: 15rem;
   width: 20rem;
   transition: var(--transition1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .edu-info .education:hover {
@@ -350,14 +366,9 @@ button:hover {
   color: white;
 }
 
-.education div {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.education div p {
-  font-size: 1.4;
+.edu-info .education p {
+  width: 100%;
+  text-transform: capitalize;
 }
 
 @media (max-width: 600px) {
@@ -372,7 +383,7 @@ button:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
   }
@@ -382,6 +393,11 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .aboutImg img {
+    width: 80%;
+    border-radius: 1rem;
   }
 
   .aboutInfo {
@@ -394,6 +410,7 @@ button:hover {
   .myself {
     line-height: 2;
     font-size: 1.2rem;
+    text-align: justify;
   }
 
   .aboutInfo h2 {
@@ -410,13 +427,16 @@ button:hover {
   }
 
   .edu-info .education {
-    width: 100%;
     border: 2px solid black;
+    border-radius: 1rem;
     border-color: var(--text-white);
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
     height: 15rem;
-    width: 20rem;
+    width: 100%;
     transition: var(--transition1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .edu-info .education:hover {
@@ -424,16 +444,9 @@ button:hover {
     color: white;
   }
 
-  .education div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
+  .edu-info .education p {
     width: 100%;
-  }
-
-  .education div p {
-    font-size: 1.5;
+    text-transform: capitalize;
   }
 }
 
@@ -468,6 +481,7 @@ button:hover {
   border: 2px solid black;
   border-color: var(--text-white);
   transition: var(--transition1);
+  border-radius: 1rem;
 }
 
 .services article:hover {
@@ -500,6 +514,7 @@ button:hover {
   font-size: 1.2rem;
   text-transform: capitalize;
   transition: var(--transition1);
+  border-radius: 1rem;
 }
 
 .skill article:hover {
@@ -537,6 +552,7 @@ button:hover {
     border: 2px solid black;
     border-color: var(--text-white);
     transition: var(--transition1);
+    text-align: center;
   }
 
   .services article:hover {
@@ -595,6 +611,7 @@ button:hover {
 
 .singleProject img {
   width: 100%;
+  border-radius: 1rem;
 }
 
 .btn-container {
@@ -669,6 +686,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .contact-center {
@@ -678,6 +696,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  height: 80%;
 }
 
 .contact-info {
@@ -686,10 +705,13 @@ button:hover {
   align-items: left;
   flex-direction: column;
   width: 50%;
-  gap: 2rem;
+  gap: 1rem;
   border: 2px solid black;
   padding: 1rem 2rem;
   border-color: var(--text-white);
+  border-radius: 1rem;
+
+  height: 100%;
 }
 
 .info {
@@ -700,6 +722,7 @@ button:hover {
   width: 40%;
   margin: 0 auto;
   text-align: center;
+  height: 100%;
 }
 
 .info i {
@@ -724,6 +747,7 @@ button:hover {
   border: 2px solid black;
   border-color: var(--text-white);
   height: 100%;
+  border-radius: 1rem;
 }
 
 form {
@@ -748,18 +772,22 @@ form div label {
 form div input {
   height: 2rem;
   padding-left: 1rem;
+  outline: none;
 }
 
 form div textarea {
   height: 6rem;
   padding-left: 1rem;
+  outline: none;
 }
 
 form button {
   width: max-content;
   margin: 0 auto;
   border-color: var(--text-white);
-  color: var(--text-white);
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  border-color: var(--bg-white);
 }
 
 @media (max-width: 600px) {
@@ -827,6 +855,7 @@ form button {
     border: 2px solid black;
     border-color: var(--text-white);
     height: 100%;
+    padding: 1rem;
   }
 
   form {
@@ -902,6 +931,7 @@ form button {
     width: 100vw;
     height: 3rem;
     background-color: var(--nav-bg);
+    overflow: hidden;
   }
 
   .footer-center {
@@ -911,6 +941,7 @@ form button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
   }
 
   .footer-center h3 {

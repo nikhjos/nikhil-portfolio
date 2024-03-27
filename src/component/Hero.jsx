@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../assets/hero-image.svg";
 import Wrapper from "../assets/Wrappers/Hero";
+import Resume from "../assets/Resume.pdf";
 
 const Hero = () => {
   return (
@@ -10,11 +11,13 @@ const Hero = () => {
           <h2>Nikhil Joshi</h2>
           <span>Web Developer</span>
           <p>
-            experianced wb developer specializing in creating innovative and
+            experianced web developer specializing in creating innovative and
             user friendly digital solutions
           </p>
 
-          <button type="button">Download Cv</button>
+          <a href={Resume} download>
+            Download Cv
+          </a>
         </div>
 
         <div className="hero-image">
