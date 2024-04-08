@@ -4,7 +4,7 @@ import { BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 export const navlinks = [
   { id: nanoid(), href: "#hero", text: "Home" },
   { id: nanoid(), href: "#about", text: "About" },
-  { id: nanoid(), href: "#service", text: "Services" },
+  { id: nanoid(), href: "#services", text: "Services" },
   { id: nanoid(), href: "#portfolios", text: "Portfolio" },
   { id: nanoid(), href: "#contact", text: "Contact" },
 ];
@@ -15,13 +15,25 @@ export const allPageLinks = [
 ];
 
 export const socialLinks = [
-  { id: nanoid(), href: "https/:www.instagram.com", text: <BsInstagram /> },
-  { id: nanoid(), href: "https://wa.me/917350567289", text: <BsWhatsapp /> },
-  { id: nanoid(), href: "https/:www.linkedin.com", text: <BsLinkedin /> },
+  { id: nanoid(), href: "https/:www.instagram.com", icon: <BsInstagram /> },
+  { id: nanoid(), href: "https://wa.me/917350567289", icon: <BsWhatsapp /> },
+  { id: nanoid(), href: "https/:www.linkedin.com", icon: <BsLinkedin /> },
+  {
+    id: nanoid(),
+    href: "https://mail.google.com/mail/u/0/#inbox?compose=new",
+    icon: <MdEmail />,
+  },
 ];
 
-import { FaCss3, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import {
+  FaCss3,
+  FaHtml5,
+  FaNodeJs,
+  FaReact,
+  FaBootstrap,
+} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
+import { SiRedux, SiTailwindcss, SiDaisyui } from "react-icons/si";
 
 export const skills = [
   { id: nanoid(), text: "html", icon: <FaHtml5 /> },
@@ -33,14 +45,14 @@ export const skills = [
   },
   { id: nanoid(), text: "reactjs", icon: <FaReact /> },
 
-  { id: nanoid(), text: "nodeJs", icon: <FaNodeJs /> },
-  { id: nanoid(), text: "sql", icon: <FaNodeJs /> },
+  { id: nanoid(), text: "redux", icon: <SiRedux /> },
+  { id: nanoid(), text: "tailwind css", icon: <SiTailwindcss /> },
   {
     id: nanoid(),
-    text: "postgresql",
-    icon: <FaNodeJs />,
+    text: "daisy ui",
+    icon: <SiDaisyui />,
   },
-  { id: nanoid(), text: "mongoDb", icon: <FaNodeJs /> },
+  { id: nanoid(), text: "bootstrap", icon: <FaBootstrap /> },
 ];
 
 export const Info = [
@@ -158,7 +170,7 @@ export const contactList = [
     id: nanoid(),
     icon: <FaMapMarkerAlt />,
     name: "Address",
-    text: "K-76, N-7, Bajarang Chowk, Cidco, Chhatrapati SambhajiNagar",
+    text: "Chhatrapati SambhajiNagar, MH-431003",
     style: "#d44638",
   },
 ];

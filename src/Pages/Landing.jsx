@@ -1,28 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, Hero, About, Portfolio, Contact, Footer } from "../component";
+import {
+  Navbar,
+  Hero,
+  About,
+  Portfolio,
+  Contact,
+  Services,
+  Footer,
+} from "../component";
 import Skill from "../component/Skills";
-import { Outlet } from "react-router-dom";
 
-const getLocalStorage = () => {
-  const storeDarkMode = localStorage.getItem("dark-mode") === true;
-  return storeDarkMode;
+const getThemeFromLocalStorage = () => {
+  const storeTheme = localStorage.getItem("store-theme") || true;
+
+  return storeTheme;
 };
 
 const Landing = () => {
-  const [theme, setTheme] = useState(getLocalStorage());
+  const [theme, setTheme] = useState(getThemeFromLocalStorage());
 
-  let newTheme = !theme;
+  const newTheme = !theme;
 
   const toggleTheme = () => {
     setTheme(newTheme);
-
-    localStorage.setItem("dark-mode", newTheme);
-    document.body.classList.toggle("dark-mode", newTheme);
   };
 
-  // useEffect(() => {
-  //   document.body.classList.toggle("dark-mode", newTheme);
-  // }, [newTheme]);
+  useEffect(() => {
+    localStorage.setItem("store-theme", newTheme);
+    document.body.classList.toggle("dark-mode", newTheme);
+  }, [newTheme]);
 
   return (
     <main>
@@ -30,6 +36,7 @@ const Landing = () => {
       <Hero />
       <About />
       <Skill />
+      <Services />
       <Portfolio />
       <Contact />
       <Footer />

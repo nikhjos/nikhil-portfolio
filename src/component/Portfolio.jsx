@@ -21,10 +21,20 @@ const Portfolio = () => {
                 <article key={id} className="singleProject">
                   <img src={img} alt="image" />
                   <div className="btn-container">
-                    <Link to={href} target="_blank" rel="noreferrer">
+                    <Link
+                      to={href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link-btn"
+                    >
                       {github}
                     </Link>
-                    <Link to={githref} target="_blank" rel="noreferrer">
+                    <Link
+                      to={githref}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="link-btn"
+                    >
                       {website}
                     </Link>
                   </div>

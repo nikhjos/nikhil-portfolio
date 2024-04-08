@@ -1,27 +1,22 @@
 import React from "react";
-import { socialLinks } from "../assets/Data";
+import { contactList } from "../assets/Data";
 import Wrapper from "../assets/Wrappers/Footer";
 
 const Footer = () => {
   return (
-    <section>
-      <div id="footer">
-        <div className="footer-center">
-          <h3>connect with me </h3>
-
-          <div className="footer-links">
-            {socialLinks.map((link) => {
-              const { id, href, text } = link;
-              return (
-                <a key={id} href={href}>
-                  {text}{" "}
-                </a>
-              );
-            })}
-          </div>
-        </div>
+    <div id="footer">
+      <div className="footer-center">
+        {contactList.map((link) => {
+          const { id, icon, name, text, style } = link;
+          return (
+            <article key={id}>
+              <i>{icon} </i>
+              <p>{text} </p> ||
+            </article>
+          );
+        })}
       </div>
-    </section>
+    </div>
   );
 };
 

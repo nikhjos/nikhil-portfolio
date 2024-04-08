@@ -1,5 +1,5 @@
 import React from "react";
-import { contactList } from "../assets/Data";
+import { socialLinks } from "../assets/Data";
 import Title from "./Title";
 import Wrapper from "../assets/Wrappers/Contact";
 
@@ -13,39 +13,31 @@ const Contact = () => {
 
         <div className="contact-center">
           <div className="contact-info">
-            {contactList.map((contact) => {
-              const { id, icon, name, text, style } = contact;
+            {socialLinks.map((link) => {
+              const { id, href, icon } = link;
               return (
-                <div key={id} className="info">
-                  <i>{icon} </i>
-
-                  <p>{text} </p>
-                </div>
+                <a key={id} href={href} className="info" target="_blank">
+                  {icon}
+                </a>
               );
             })}
           </div>
-
-          <div className="contact-form">
-            <div className="sub-heading">
-              <Title name="Email Me" size="1.5rem" />
+          <form>
+            <div>
+              <label htmlFor="name">name</label>
+              <input type="text" id="name" />
             </div>
-            <form>
-              <div>
-                <label htmlFor="name">name</label>
-                <input type="text" id="name" />
-              </div>
-              <div>
-                <label htmlFor="email">email</label>
-                <input type="email" id="email" />
-              </div>
-              <div>
-                <label htmlFor="message">mesage</label>
-                <textarea name="message" id="message"></textarea>
-              </div>
+            <div>
+              <label htmlFor="email">email</label>
+              <input type="email" id="email" />
+            </div>
+            <div>
+              <label htmlFor="message">mesage</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
 
-              <button type="submit">send</button>
-            </form>
-          </div>
+            <button type="submit">send</button>
+          </form>
         </div>
       </div>
     </section>

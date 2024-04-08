@@ -3,6 +3,8 @@ import aboutImg from "../assets/about-img.jpg";
 import Title from "./Title";
 
 import Wrapper from "../assets/Wrappers/About";
+import { MdCastForEducation } from "react-icons/md";
+import { FaUniversity } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -33,18 +35,30 @@ const About = () => {
             <div className="edu-info">
               <div className="education">
                 <h2>Education</h2>
-                <h3>B.C.S</h3>
-                <p>shivchhatrapati mahavidhyalaya</p>
-                <p>Bamu University</p>
+
+                <div>
+                  <h3>
+                    <i>
+                      <MdCastForEducation />
+                    </i>
+                    Bachelor in computer science
+                  </h3>
+                  <p>
+                    <i>
+                      <FaUniversity />
+                    </i>
+                    Bamu University
+                  </p>
+                </div>
               </div>
 
               <div className="education">
-                <h2>Courses</h2>
+                <h2>Udemy Courses</h2>
 
-                <h3>Web Devlopment</h3>
-                <p>Udemy</p>
-                <h3>React Js</h3>
-                <p>Udemy</p>
+                <ul>
+                  <li>Web Development</li>
+                  <li> ReactJs</li>
+                </ul>
               </div>
             </div>
           </div>
