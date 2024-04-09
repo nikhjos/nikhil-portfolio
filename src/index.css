@@ -91,7 +91,6 @@ a {
   left: 0;
   z-index: 10;
   background-color: white;
-  box-shadow: var(--box-shadow1);
 }
 
 .navbar-center {
@@ -103,6 +102,8 @@ a {
   align-items: center;
   gap: 7rem;
   background-color: var(--bg-color-black);
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
 }
 
 .logo {
@@ -179,6 +180,8 @@ a {
   width: 100%;
   height: 100vh;
   margin-top: 3rem;
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
 }
 
 .hero-center {
@@ -243,7 +246,8 @@ a {
   #hero {
     width: 100%;
     height: 100vh;
-    margin-top: 0rem;
+    border-bottom: 2px solid black;
+    border-color: var(--border-color);
   }
 
   .hero-image img {
@@ -252,7 +256,19 @@ a {
     height: 200px;
   }
 
+  .hero-intro h2 {
+    font-size: 3rem;
+  }
+
+  .hero-intro span {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
   .hero-intro p {
+    line-height: 2;
+    margin-bottom: 2rem;
+    width: 100%;
     text-align: center;
   }
 }
@@ -262,6 +278,9 @@ a {
 #about {
   width: 100vw;
   margin-bottom: 4rem;
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
+  padding-bottom: 4rem;
 }
 
 .about-center {
@@ -384,6 +403,9 @@ a {
 #skills {
   width: 100vw;
   margin-bottom: 4rem;
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
+  padding-bottom: 4rem;
 }
 
 .skill-center {
@@ -445,6 +467,9 @@ a {
 #services {
   width: 100vw;
   margin-bottom: 4rem;
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
+  padding-bottom: 4rem;
 }
 
 .service-center {
@@ -516,6 +541,9 @@ a {
 #portfolios {
   width: 100vw;
   margin-bottom: 4rem;
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
+  padding-bottom: 4rem;
 }
 
 .portfolio-center {
@@ -583,6 +611,9 @@ a {
 #contact {
   width: 100vw;
   margin-bottom: 4rem;
+  border-bottom: 2px solid black;
+  border-color: var(--border-color);
+  padding-bottom: 4rem;
 }
 
 .contact-center {
@@ -856,7 +887,7 @@ form button {
 .sidebar-show {
   transform: translateX(0);
   z-index: 200;
-  animation: slideEffect 0.3s linear;
+  animation: slideEffect 0.3s ease-in-out;
 }
 
 @keyframes slideEffect {
