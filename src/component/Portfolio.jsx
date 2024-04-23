@@ -16,27 +16,36 @@ const Portfolio = () => {
         <div className="portfolio-center">
           <div className="projects">
             {portfolios.map((item) => {
-              const { id, img, href, githref, github, website } = item;
+              const { id, img, href, githref, github, website, title, desc } =
+                item;
               return (
                 <article key={id} className="singleProject">
                   <img src={img} alt="image" />
-                  <div className="btn-container">
-                    <Link
-                      to={href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-btn"
-                    >
-                      {github}
-                    </Link>
-                    <Link
-                      to={githref}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="link-btn"
-                    >
-                      {website}
-                    </Link>
+
+                  <div className="projectDetails">
+                    <div>
+                      <h3>{title} </h3>
+                      <p>{desc} </p>
+                    </div>
+
+                    <div className="btn-container">
+                      <Link
+                        to={href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link-btn"
+                      >
+                        {github}
+                      </Link>
+                      <Link
+                        to={githref}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="link-btn"
+                      >
+                        {website}
+                      </Link>
+                    </div>
                   </div>
                 </article>
               );

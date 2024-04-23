@@ -119,6 +119,8 @@ export const portfolioList = [
     github: <FaGithubSquare />,
     website: <CgWebsite />,
     feature: true,
+    title: "Unsplash-Imgae",
+    desc: "lorrem ghdytut  hgvuy fu jhg duyu gyj gsdyguy hbggsduy bgdua  b gsduyg buy dtu7t",
   },
   {
     id: nanoid(),
@@ -128,6 +130,8 @@ export const portfolioList = [
     github: <FaGithubSquare />,
     website: <CgWebsite />,
     feature: true,
+    title: "Contentfull cms",
+    desc: "lorrem ghdytut  hgvuy fu jhg duyu gyj gsdyguy hbggsduy bgdua  b gsduyg buy dtu7t",
   },
   {
     id: nanoid(),
@@ -145,6 +149,8 @@ export const portfolioList = [
     github: <FaGithubSquare />,
     website: <CgWebsite />,
     feature: true,
+    title: "Comfy-store",
+    desc: "lorrem ghdytut  hgvuy fu jhg duyu gyj gsdyguy hbggsduy bgdua  b gsduyg buy dtu7t",
   },
 ];
 
