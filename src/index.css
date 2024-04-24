@@ -180,7 +180,7 @@ p {
   width: 40%;
   display: grid;
   height: 60%;
-  border-left: 2px solid var(--color3);
+  border-left: 2px solid var(--color2);
   padding: 0.5rem;
   position: relative;
   border-radius: 5px;
@@ -253,7 +253,7 @@ p {
 
   .hero-center {
     width: 90%;
-    height: 80vh;
+    height: 90vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -290,12 +290,12 @@ p {
     flex-direction: column;
     align-items: left;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 2rem;
     height: 100%;
   }
 
   .hero-intro h4 {
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-weight: 400;
     color: var(--color2);
   }
@@ -361,7 +361,7 @@ p {
   width: 40%;
   height: 70%;
   position: relative;
-  border-right: 2px solid var(--color3);
+  border-right: 2px solid var(--color2);
 }
 
 .aboutImg img {
@@ -455,6 +455,14 @@ ul {
 
 .education ul li {
   color: var(--color2);
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 
 @media (max-width: 600px) {
@@ -594,7 +602,7 @@ ul {
 }
 
 .skill {
-  border-bottom: 1px solid var(--color3);
+  border-bottom: 3px solid var(--color2);
   padding: 0.6rem 0.3rem;
   display: flex;
   flex-direction: column;
@@ -608,6 +616,7 @@ ul {
 
 .skill h3 {
   font-size: 1.5rem;
+  text-transform: capitalize;
 }
 
 @media (max-width: 600px) {
@@ -629,7 +638,7 @@ ul {
   }
 
   .skill i {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .skill h3 {
@@ -644,6 +653,7 @@ ul {
   height: 70vh;
   margin-bottom: 4rem;
   padding-bottom: 4rem;
+  z-index: 0;
 }
 
 .service-center {
@@ -657,7 +667,7 @@ ul {
 }
 
 .service {
-  border: 2px solid var(--color3);
+  border: 2px solid var(--color2);
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
@@ -731,13 +741,12 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .singleProject {
   display: flex;
   flex-direction: column;
-  gap: 5%;
   transition: all 0.3s ease;
   border-radius: 1rem;
   box-shadow: var(--box-shadow1);
@@ -791,7 +800,6 @@ ul {
 
 .projectDetails div p {
   line-height: 2;
-  text-align: justify;
   letter-spacing: 2px;
   margin-bottom: 2rem;
 }
@@ -813,8 +821,8 @@ ul {
   text-transform: capitalize;
   font-size: 1.2rem;
   text-decoration: underline;
-  color: black;
-  background-color: aliceblue;
+  color: var(--color2);
+  background-color: var(--color3);
 }
 
 @media (max-width: 600px) {
@@ -853,7 +861,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  border: 1px solid var(--color3);
+  border: 1px solid var(--color2);
   border-radius: 1rem;
   padding: 2rem;
   width: 20%;
@@ -867,12 +875,12 @@ ul {
 .contact-info a {
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: var(--color3);
   width: 50%;
   height: 4rem;
   display: grid;
   place-items: center;
-  color: black;
+  color: var(--color2);
 }
 
 .contact-info a:hover {
@@ -886,7 +894,7 @@ form {
   align-items: center;
   gap: 2rem;
   width: 40%;
-  border: 1px solid var(--color3);
+  border: 1px solid var(--color2);
   border-radius: 1rem;
   padding: 1rem;
   height: 100%;
@@ -913,9 +921,10 @@ textarea {
 
 input,
 textarea {
-  background-color: white;
+  background-color: var(--color3);
   border-radius: 0.5rem;
   font-size: 1.2rem;
+  color: var(--color2);
 }
 
 textarea {
@@ -924,18 +933,18 @@ textarea {
 
 form button {
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--color3);
   border-radius: 5px;
   padding: 0.5rem 1rem;
   font-weight: 500;
   text-transform: capitalize;
+  color: var(--color2);
 }
 
 @media (max-width: 600px) {
   .contact-center {
     width: 90%;
     height: auto;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -949,7 +958,6 @@ form button {
     align-items: center;
     gap: 2rem;
     border-radius: 1rem;
-
     padding: 2rem;
     width: 100%;
     height: 100%;
@@ -962,8 +970,6 @@ form button {
   .contact-info a {
     font-size: 1.5rem;
     transition: all 0.3s ease-in-out;
-    background-color: white;
-    width: 50%;
     height: 4rem;
     display: grid;
     place-items: center;
@@ -1020,6 +1026,7 @@ form button {
     justify-content: center;
     align-items: center;
     height: 3rem;
+    position: relative;
   }
 
   .footer-center article {
@@ -1028,7 +1035,6 @@ form button {
     align-items: center;
     gap: 2rem;
     margin-left: 2rem;
-    position: relative;
   }
 
   .footer-center article i {
@@ -1039,13 +1045,13 @@ form button {
   .footer-center article i:hover + p {
     display: block;
     position: absolute;
-    top: -4rem;
-    left: -6rem;
+    top: -6rem;
+    left: 25%;
     width: max-content;
-    background-color: antiquewhite;
+    background-color: var(--color3);
     border-radius: 1rem;
     padding: 1rem;
-    color: var(--color1);
+    color: var(--color2);
   }
 
   .footer-center article p {
@@ -1070,18 +1076,34 @@ form button {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  position: relative;
 }
 
 .homeBtn {
-  margin-bottom: 2rem;
-  text-align: left;
-  width: max-content;
-  text-decoration: underline;
+  position: fixed;
+  top: 1rem;
+  left: 3rem;
+  font-size: 2rem;
+  border: 2px solid var(--color2);
+  z-index: 10;
+  background-color: var(--color3);
+}
+
+.homeBtn p {
+  font-size: 0.8rem;
+  position: absolute;
+  top: 3rem;
+  left: 0rem;
+  display: none;
+}
+
+.homeBtn:hover p {
+  display: block;
 }
 
 @media (max-width: 600px) {
   .project-center {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;

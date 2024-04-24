@@ -91,24 +91,22 @@ const About = () => {
                     </i>
 
                     <ul>
-                      <li>Web Development</li>
-                      <li> ReactJs</li>
+                      <li>Web Development Course</li>
+                      <li> ReactJs Course</li>
                     </ul>
                   </div>
                 </div>
               )}
 
               {showContent === "exp" && (
-                <div className="info">
+                <div className="info exp">
                   <h2>Academic Experiance</h2>
 
-                  <ul>
-                    <li>
-                      {" "}
-                      i build some portfolios to show my front-end dev skills
-                    </li>
-                    <li>i also develop some big application</li>
-                  </ul>
+                  <p>
+                    I have academic experiance in web developent, specializing
+                    in building web apps using Html, css, javascript, reactJs
+                    and redux.js
+                  </p>
                 </div>
               )}
             </div>

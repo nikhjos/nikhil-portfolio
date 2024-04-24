@@ -120,7 +120,7 @@ export const portfolioList = [
     website: <CgWebsite />,
     feature: true,
     title: "Unsplash-Imgae",
-    desc: "lorrem ghdytut  hgvuy fu jhg duyu gyj gsdyguy hbggsduy bgdua  b gsduyg buy dtu7t",
+    desc: "Revolutionize your visual journey with an innovative image search app powered by unsplash API, delivering endless inpiration at your fingertips",
   },
   {
     id: nanoid(),
@@ -131,7 +131,7 @@ export const portfolioList = [
     website: <CgWebsite />,
     feature: true,
     title: "Contentfull cms",
-    desc: "lorrem ghdytut  hgvuy fu jhg duyu gyj gsdyguy hbggsduy bgdua  b gsduyg buy dtu7t",
+    desc: "Elevate web presence with a dynamic and cutomizable web app fueled by contentful cms, ensuring seamless content management and engaging user experiance",
   },
   {
     id: nanoid(),
@@ -150,7 +150,7 @@ export const portfolioList = [
     website: <CgWebsite />,
     feature: true,
     title: "Comfy-store",
-    desc: "lorrem ghdytut  hgvuy fu jhg duyu gyj gsdyguy hbggsduy bgdua  b gsduyg buy dtu7t",
+    desc: "Indulge in a seamless shopping experiance at comfy store, offering a curated selection of product just a click away",
   },
 ];
 

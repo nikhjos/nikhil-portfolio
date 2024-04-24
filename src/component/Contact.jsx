@@ -22,7 +22,10 @@ const Contact = () => {
               );
             })}
           </div>
-          <form>
+          <form
+            action="https://formsubmit.co/1a91435bad98aa6b5a1b42aef6339b97"
+            method="POST"
+          >
             <div>
               <label htmlFor="name">name</label>
               <input type="text" id="name" />

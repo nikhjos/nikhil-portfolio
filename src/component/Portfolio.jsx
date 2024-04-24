@@ -35,7 +35,7 @@ const Portfolio = () => {
                         rel="noreferrer"
                         className="link-btn"
                       >
-                        {github}
+                        {website}
                       </Link>
                       <Link
                         to={githref}
@@ -43,7 +43,7 @@ const Portfolio = () => {
                         rel="noreferrer"
                         className="link-btn"
                       >
-                        {website}
+                        {github}
                       </Link>
                     </div>
                   </div>
