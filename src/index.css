@@ -184,6 +184,10 @@ p {
   place-items: center;
 }
 
+.hero-image-small {
+  display: none;
+}
+
 .hero-image img {
   background-color: var(--color2);
   border-radius: 50%;
@@ -250,7 +254,7 @@ p {
   #hero {
     width: 100%;
     height: 80vh;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .hero-center {
@@ -260,42 +264,45 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0%;
+    gap: 0;
     position: relative;
   }
 
   .hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    display: none;
+  }
+
+  .hero-image img {
+    display: none;
+  }
+  .hero-image-small {
+    width: 40%;
     display: grid;
-    height: 100%;
-    z-index: -1;
+    height: 40%;
     overflow: hidden;
     place-items: center;
   }
 
-  .hero-image img {
-    background-color: black;
-    border-radius: 0;
-    width: 100%;
-    height: 100%;
+  .hero-image-small img {
+    background-color: var(--color2);
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     transform: scale(1.1);
-    border: none;
-    box-shadow: none;
-    opacity: 0.5;
+    border: 8px solid var(--color3);
+    box-shadow: 0px 0px 20px 2px var(--color3);
   }
 
   .hero-intro {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: 0 rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     gap: 0.5rem;
-    height: 80%;
+    height: 60%;
   }
 
   .hero-intro h4 {
@@ -319,12 +326,13 @@ p {
     margin-bottom: 1rem;
     width: 80%;
     text-align: left;
+    display: none;
   }
 
   .btns {
     display: flex;
     gap: 2rem;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
   }
 
