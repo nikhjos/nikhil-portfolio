@@ -103,9 +103,36 @@ p {
   cursor: pointer;
 }
 
+.logo:hover {
+  animation: logobigsmall linear infinite;
+  animation-duration: 800ms;
+}
+
+@keyframes logobigsmall {
+  0% {
+    transform: scale(1);
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: scale(1);
+    transform: rotate(360deg);
+  }
+}
+
 .navlinks a {
   margin-right: 2rem;
   font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+
+.navlinks a:hover {
+  border-bottom: 0.3rem solid var(--color2);
 }
 
 .theme-bars {

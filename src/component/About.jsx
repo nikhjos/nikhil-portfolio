@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import aboutImg from "../assets/about-img.png";
+import aboutImg from "../assets/user_image.svg";
 import Title from "./Title";
 
 import Wrapper from "../assets/Wrappers/About";

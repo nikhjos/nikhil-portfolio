@@ -106,6 +106,9 @@ import img1 from "../assets/unsplash-image.png";
 import img2 from "../assets/contentfull-cms.png";
 import img3 from "../assets/vaibhav-portfolio.png";
 import img4 from "../assets/comfy-store.png";
+import img5 from "../assets/hotel_menu.png";
+import img6 from "../assets/rj_portfolio.png";
+import img7 from "../assets/loremIpsum.png";
 
 import { FaGithubSquare } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
@@ -140,6 +143,8 @@ export const portfolioList = [
     githref: "https://github.com/nikhjos/nikhil-portfolio",
     github: <FaGithubSquare />,
     website: <CgWebsite />,
+    title: "vj portfolio",
+    desc: "portfolio website that shwcase all client deatails, including education, experiance and personal informmation",
   },
   {
     id: nanoid(),
@@ -151,6 +156,36 @@ export const portfolioList = [
     feature: true,
     title: "Comfy-store",
     desc: "Indulge in a seamless shopping experiance at comfy store, offering a curated selection of product just a click away",
+  },
+  {
+    id: nanoid(),
+    img: img5,
+    href: "https://gorgeous-centaur-308723.netlify.app/",
+    githref: "https://github.com/nikhjos/hotelMenuItem",
+    github: <FaGithubSquare />,
+    website: <CgWebsite />,
+    title: "Hotel menu",
+    desc: "Created a website featuring a hotel food menu with a convenient filter feature for easy navigation and selection",
+  },
+  {
+    id: nanoid(),
+    img: img6,
+    href: "https://bejewelled-khapse-4d2c33.netlify.app/",
+    githref: "https://github.com/nikhjos/rasika-portfolio",
+    github: <FaGithubSquare />,
+    website: <CgWebsite />,
+    title: "rasika portfolio",
+    desc: "portfolio website that shwcase all client deatails, including education, experiance and personal informmation",
+  },
+  {
+    id: nanoid(),
+    img: img7,
+    href: "https://main--loremipsumgenerts.netlify.app/",
+    githref: "https://github.com/nikhjos/react-lorem-ipsum-generator",
+    github: <FaGithubSquare />,
+    website: <CgWebsite />,
+    title: "lorem ipsum generator",
+    desc: "application that create lorem ipsum text paragraph with control",
   },
 ];
 

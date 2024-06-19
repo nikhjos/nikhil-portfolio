@@ -1,5 +1,5 @@
 import React from "react";
-import heroImg from "../assets/about-img.png";
+import heroImg from "../assets/user_image.svg";
 import Wrapper from "../assets/Wrappers/Hero";
 import Resume from "../assets/Resume.pdf";
 
