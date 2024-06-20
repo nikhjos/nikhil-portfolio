@@ -1,7 +1,7 @@
 import React from "react";
 import heroImg from "../assets/user_image.svg";
 import Wrapper from "../assets/Wrappers/Hero";
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/FrontEndDeveloper.pdf ";
 
 const Hero = () => {
   return (
