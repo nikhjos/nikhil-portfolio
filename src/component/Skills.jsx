@@ -1,28 +1,19 @@
 import React from "react";
-import { skills } from "../assets/Data";
-import Title from "./Title";
+import SectionTitle from "./SectionTitle";
+import { skills } from "../Data";
+import SkillsCard from "./SkillsCard";
 
-const Skill = () => {
+const Skills = () => {
   return (
-    <section>
-      <div id="skills">
-        <div className="title">
-          <Title name="Skills" size="3rem" weight="900" family="anta" />
-        </div>
-        <div className="skill-center">
-          {skills.map((skill) => {
-            const { id, text, icon } = skill;
-            return (
-              <article key={id} className="skill">
-                <i>{icon} </i>
-                <h3>{text} </h3>
-              </article>
-            );
-          })}
-        </div>
+    <section className="py-20 align-element" id="skills">
+      <SectionTitle text="tech stack" />
+      <div className="py-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {skills.map((skill) => {
+          return <SkillsCard key={skill.id} {...skill} />;
+        })}
       </div>
     </section>
   );
 };
 
-export default Skill;
+export default Skills;

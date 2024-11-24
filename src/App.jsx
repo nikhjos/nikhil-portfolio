@@ -1,30 +1,21 @@
 import React from "react";
-import { Landing, Projects } from "./Pages";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Pages/Home";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    children: [
-      {
-        index: true,
-        element: <Landing />,
-      },
-      {
-        path: "projects",
-        element: <Projects />,
-      },
-    ],
-  },
-]);
+import Navbar from "./component/Navbar";
+import Hero from "./component/Hero";
+import Skills from "./component/Skills";
+import About from "./component/About";
+import Projects from "./component/Projects";
+import Contcat from "./component/Contcat";
 
 const App = () => {
   return (
-    <main>
-      <RouterProvider router={router} />
-    </main>
+    <>
+      <Navbar />
+      <Hero />
+      <Skills />
+      <About />
+      <Projects />
+      {/* <Contcat /> */}
+    </>
   );
 };
 

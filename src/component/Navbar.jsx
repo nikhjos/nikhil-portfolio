@@ -1,54 +1,29 @@
-import React, { useState } from "react";
-import { navlinks } from "../assets/Data";
-import { FaBars, FaMoon, FaSun } from "react-icons/fa";
-import Wrapper from "../assets/Wrappers/Navbar";
-import Sidebar from "./Sidebar";
+import React from "react";
+import { links } from "../Data";
 
-const Navbar = ({ theme, toggleTheme }) => {
-  const [sidebar, setSidebar] = useState(false);
+const Navbar = () => {
   return (
-    <section>
-      <div className="navbar">
-        <div className="navbar-center">
-          <div className="logo">
-            <h2>NJ</h2>
-          </div>
-
-          <div className="navlinks">
-            {/* update to navlinks after router install */}
-
-            {navlinks.map((link) => {
-              const { id, href, text } = link;
-              return (
-                <a key={id} href={href}>
-                  {text}
-                </a>
-              );
-            })}
-          </div>
-
-          <div className="theme-bars">
-            <div className="theme">
-              <button type="button" onClick={toggleTheme}>
-                {theme ? (
-                  <FaSun className="sun" />
-                ) : (
-                  <FaMoon className="moon" />
-                )}
-              </button>
-            </div>
-
-            <div className="bars">
-              <button type="button" onClick={() => setSidebar(true)}>
-                <FaBars />{" "}
-              </button>
-
-              {sidebar && <Sidebar sidebar={sidebar} setSidebar={setSidebar} />}
-            </div>
-          </div>
+    <nav className="bg-emerald-100">
+      <div className="align-element py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
+        <h2 className="text-3xl font-bold">
+          web<span className="text-emerald-600">Dev</span>
+        </h2>
+        <div className="flex gap-x-3">
+          {links.map((link) => {
+            const { id, href, text } = link;
+            return (
+              <a
+                key={id}
+                href={href}
+                className="capitalize text-lg tracking-wide hover:text-emarald-600 duration-300"
+              >
+                {text}{" "}
+              </a>
+            );
+          })}
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
