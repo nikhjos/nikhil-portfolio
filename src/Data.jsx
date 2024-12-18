@@ -1,5 +1,12 @@
 import { nanoid } from "nanoid";
-import { FaHtml5, FaJs, FaReact, FaBootstrap } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaBootstrap,
+  FaWordpress,
+  FaNodeJs,
+} from "react-icons/fa";
 import { SiRedux, SiTailwindcss } from "react-icons/si";
 
 export const links = [
@@ -46,6 +53,18 @@ export const skills = [
     icon: <FaBootstrap className="h-16 w-16 text-emerald-500" />,
     text: "Experienced in using Bootstrap to design responsive, mobile-first websites. Proficient in integrating Bootstrap’s pre-built components and grid system to create modern, user-friendly interface.",
   },
+  {
+    id: nanoid(),
+    title: "Wordpress",
+    icon: <FaWordpress className="h-16 w-16 text-emerald-500" />,
+    text: "Proficient in WordPress development, including theme customization, plugin integration, and building responsive websites. Experienced in utilizing WordPress powerful features to create visually appealing, user-centric websites with seamless functionality",
+  },
+  {
+    id: nanoid(),
+    title: "Node Js",
+    icon: <FaNodeJs className="h-16 w-16 text-emerald-500" />,
+    text: "Familiar with Node.js, able to build basic server-side applications and handle backend development tasks. Comfortable working with Node.js to create simple APIs and manage server functionality.",
+  },
 ];
 
 import unsplash from "./assets/unsplash-image.png";
@@ -53,8 +72,45 @@ import comfy from "./assets/comfy-store.png";
 import mixMaster from "./assets/hotel_menu.png";
 import contentfull from "./assets/contentfull-cms.png";
 import portfolio from "./assets/rj_portfolio.png";
+import omicronjourney from "./assets/omicron.png";
+import xpresscab from "./assets/xcabrental.png";
+import rms from "./assets/rms.png";
+import raj from "./assets/raj.png";
 
 export const projects = [
+  {
+    id: nanoid(),
+    img: omicronjourney,
+    url: "https://omicronjourneys.com/",
+    github: "",
+    title: "omicron journey",
+    text: "Omicron Journey: Your Trusted Vehicle Rental Service for Every Journey Offering a Wide Range of Cars, Minibuses, Sedans, SUVs, Buses, Volvos, and Hatchbacks to Suit Your Travel Needs.",
+  },
+  {
+    id: nanoid(),
+    img: xpresscab,
+    url: "https://xpresscabrental.com/",
+    github: "",
+    title: "xpresscab rental",
+    text: "XpressCab Rental: Reliable Vehicle Rentals for Seamless Travel Around Aurangabad Offering a Variety of Cars, Minibuses, Sedans, SUVs, Buses, Volvos, and Hatchbacks for Every Trip.",
+  },
+  {
+    id: nanoid(),
+    img: rms,
+    url: "https://royalmultiservices.com/",
+    github: "",
+    title: "royal multiservices",
+    text: "Royal Multiservices: Providing Expert Staffing Solutions From Hospital and Nursing Staff to Skilled and Unskilled Labor, Industrial Personnel, and Security Services, Tailored to Meet Your Workforce Needs.",
+  },
+
+  {
+    id: nanoid(),
+    img: raj,
+    url: "https://rajholidays.in/",
+    github: "",
+    title: "raj holidays",
+    text: "Raj Holidays: Your Trusted Travel Partner Offering Customized Travel Packages for Domestic and International Destinations, Tailored to Create Unforgettable Journeys",
+  },
   {
     id: nanoid(),
     img: unsplash,
